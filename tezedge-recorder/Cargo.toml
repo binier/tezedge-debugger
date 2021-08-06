@@ -60,8 +60,8 @@ jemallocator = { version = "0.3", optional = true }
 [target.'cfg(target_os = "linux")'.dependencies]
 bpf-recorder = { path = "../bpf-recorder", features = ["client"] }
 
-crypto = { tag = "v1.6.5", git = "https://github.com/tezedge/tezedge" }
-tezos_messages = { tag = "v1.6.5", git = "https://github.com/tezedge/tezedge" }
-storage = { tag = "v1.6.5", git = "https://github.com/tezedge/tezedge" }
+crypto = { branch = "develop", git = "https://github.com/tezedge/tezedge" }
+tezos_messages = { branch = "develop", git = "https://github.com/tezedge/tezedge" }
+storage = { branch = "develop", git = "https://github.com/tezedge/tezedge" }
 
 pseudonode = { path = "../pseudonode" }
